@@ -6,10 +6,9 @@ from discord.utils import get
 from discord import FFmpegPCMAudio
 from discord import TextChannel
 from youtube_dl import YoutubeDL
-import ffmpeg
 
 load_dotenv()
-bot = commands.Bot(command_prefix=',')  # prefix our commands with '.'
+bot = commands.Bot(command_prefix=',')
 
 players = {}
 
