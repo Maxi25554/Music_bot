@@ -45,7 +45,7 @@ async def play(ctx, url):
         URL = info['url']
         print (str(URL))
         await ctx.send(str(URL))
-        voice.play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
+        voice.play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS, executable="FFmpeg.exe"))
         voice.is_playing()
         await ctx.send('Bot is playing')
 
