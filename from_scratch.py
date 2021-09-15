@@ -93,6 +93,4 @@ async def disconnect(ctx):
 
 
 
-Perms = "137488617024"
-Invite = "https://discord.com/api/oauth2/authorize?client_id=887511460324970496&permissions=137488617024&scope=bot"
 bot.run(os.getenv('TOKEN'))
